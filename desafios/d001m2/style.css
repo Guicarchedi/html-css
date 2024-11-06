@@ -1,0 +1,181 @@
+/* fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Squada+One&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* cores do site
+ 1: #EAF7F0 = fundo dos subtitulos
+ 2: #DEF2E7 = cor fonte header e nav
+ 3: #84E1AD = body
+ 4: #2F6C4A = cor fonte subtitulos
+ 5: #1F2020 = cor paragrafo
+*/
+
+/* cores do gradend do site 
+ 1: #3BD27F
+ 2: #2B975A
+ 3: #1A5C38
+*/
+
+/* todo o conteudo */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* conteudo do site */
+body{
+    background-color: #84E1AD;
+}
+
+/* cabeçalho */
+header{
+    background-image: linear-gradient(180deg, #3BD27F, #2B975A, #1A5C38);
+    color: #DEF2E7;
+}
+header > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1#titulo{
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px black;
+    padding: 1rem;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    padding: 1rem;
+}
+nav{
+    padding: 0.5rem;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 3em;
+    
+}
+.menu{
+    color: white;
+    font-family: "Squada One", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+.menu:hover{
+    cursor: pointer;
+}
+
+/* conteudo principal */
+main{
+    background-color: #ddd;
+    width: 800px;
+    padding: 1rem;
+    margin: auto;
+    font-family: 'android';
+}
+main > h1{
+    padding: 1rem 1rem 1rem 0rem;
+    color: #278d55;
+}
+main > h2{
+    background-color: rgba(80, 173, 80, 0.377);
+    color: #1A5C38;
+    margin: 1rem 1rem 1rem 0rem;
+}
+main > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 1rem;
+}
+strong{
+    color: #1A5C38;
+}
+a{
+    text-decoration: none;
+    color: #278d55;
+}
+picture{
+    align-items: center;
+    width: 100%;
+}
+.video{
+    background-color: #1A5C38;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.curiosidades{
+    background-color: #84E1AD;
+    margin: 1rem 0rem 1rem 0rem;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.185);
+}
+h3{
+    background-color: #278d55;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    padding: 0.7rem;
+    border-radius: 1em 1em 0 0;
+}
+.curiosidades > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 0.5rem;
+}
+.lista-topicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 11rem;
+    padding: 0.5rem;
+    list-style-position: outside;
+    list-style-type: none;
+}
+li{
+    font-family: 'android';
+    padding: 0.2rem;
+}
+li::before{
+    content: '\002714';
+    padding: 0.5rem;
+}
+.topico{
+    text-decoration: underline;
+}
+
+/* rodapé */
+footer{
+    background-color: #1A5C38;
+    margin-top: 1rem;
+}
+footer > p{
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5rem;
+}
+.negrito{
+    color: #6bbe8f;
+}
