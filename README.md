@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora estou gerenciando meu repositorio!
 
- <a href="https://guicarchedi.github.io/html-css/exercicios/ex002/index.html"></a>
+ <a href="https://guicarchedi.github.io/html-css/exercicios/ex002/index.html">execultar o exercicio 001</a>
