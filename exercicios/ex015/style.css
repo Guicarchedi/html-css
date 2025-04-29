@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* Documento CSS */
+
+body{
+    background-color: aqua;
+    color: blue;
+}
+h1{
+    color: red;
+    background-color: violet;
+}
+h2{
+    color: green;
+}
