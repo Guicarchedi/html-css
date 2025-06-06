@@ -12,11 +12,29 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.2em;
         }
 
         thead, tfoot{
             background-color: darkgray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
 
         td, th{
@@ -34,6 +52,7 @@
     <!-- 
         ANATOMIAS DE TABELAS GRANDES
         TABLE = tabela
+            CAPTION = título da tabela (opcional)
             THEAD = cabeçalho da tabela
                 TR = linha do cabeçalho
                     TH = célula do cabeçalho
@@ -45,10 +64,11 @@
                     TD = célula do rodapé
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -163,10 +183,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>211.100.000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio quo, corrupti est a temporibus voluptatem nemo provident amet? Asperiores amet excepturi veritatis eius fuga cumque, odit omnis dignissimos quasi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dicta nihil dolore minima. Iure, distinctio. Harum, tempore nesciunt quis iusto suscipit blanditiis error eum esse distinctio, libero culpa neque est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam itaque distinctio pariatur eius eligendi animi porro excepturi libero quaerat amet laborum natus, magnam accusamus nulla quasi numquam consequatur illo commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio quo, corrupti est a temporibus voluptatem nemo provident amet? Asperiores amet excepturi veritatis eius fuga cumque, odit omnis dignissimos quasi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dicta nihil dolore minima. Iure, distinctio. Harum, tempore nesciunt quis iusto suscipit blanditiis error eum esse distinctio, libero culpa neque est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam itaque distinctio pariatur eius eligendi animi porro excepturi libero quaerat amet laborum natus, magnam accusamus nulla quasi numquam consequatur illo commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio quo, corrupti est a temporibus voluptatem nemo provident amet? Asperiores amet excepturi veritatis eius fuga cumque, odit omnis dignissimos quasi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dicta nihil dolore minima. Iure, distinctio. Harum, tempore nesciunt quis iusto suscipit blanditiis error eum esse distinctio, libero culpa neque est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam itaque distinctio pariatur eius eligendi animi porro excepturi libero quaerat amet laborum natus, magnam accusamus nulla quasi numquam consequatur illo commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio quo, corrupti est a temporibus voluptatem nemo provident amet? Asperiores amet excepturi veritatis eius fuga cumque, odit omnis dignissimos quasi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dicta nihil dolore minima. Iure, distinctio. Harum, tempore nesciunt quis iusto suscipit blanditiis error eum esse distinctio, libero culpa neque est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam itaque distinctio pariatur eius eligendi animi porro excepturi libero quaerat amet laborum natus, magnam accusamus nulla quasi numquam consequatur illo commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio quo, corrupti est a temporibus voluptatem nemo provident amet? Asperiores amet excepturi veritatis eius fuga cumque, odit omnis dignissimos quasi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dicta nihil dolore minima. Iure, distinctio. Harum, tempore nesciunt quis iusto suscipit blanditiis error eum esse distinctio, libero culpa neque est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam itaque distinctio pariatur eius eligendi animi porro excepturi libero quaerat amet laborum natus, magnam accusamus nulla quasi numquam consequatur illo commodi?</p>
 </body>
 </html>
