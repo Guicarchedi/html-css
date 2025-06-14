@@ -35,6 +35,15 @@ main{
     transform: translate(-50%, -50%);
 }
 
+iframe{
+    border: none;
+    height: 380px;
+    width: 216px;
+    display: block;
+    margin: auto;
+    margin-top: 3.9rem;
+}
+
 #redes-sociais{
     height: 400px;
     width: 100px;
