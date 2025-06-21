@@ -11,8 +11,13 @@
     </style>
 </head>
 <body>
+    <!-- 
+        METODO DE FORMULARIOS:
+        1- GET (METODO PADRÃO)
+        2- POST
+    -->
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
@@ -21,7 +26,7 @@
             <label for="isobrenome">Sobrenome:</label>
             <input type="text" name="sobrenome" id="isobrenome">
         </p>
-        <p><input type="button" value="Cadastrar"></p>
+        <p><input type="submit" value="Cadastrar"></p>
     </form>
 </body>
 </html>
